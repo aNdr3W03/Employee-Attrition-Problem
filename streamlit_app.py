@@ -74,11 +74,11 @@ def main():
     st.text('')
     
     with st.container():
-        col_daily_rate, dol_hourly_rate, col_monthly_rate = st.columns(3)
+        col_hourly_rate, col_daily_rate, col_monthly_rate = st.columns(3)
+        with col_hourly_rate:
+            hourly_rate = st.number_input('Hourly Rate', step=1)
         with col_daily_rate:
             daily_rate = st.number_input('Daily Rate', step=100)
-        with dol_hourly_rate:
-            hourly_rate = st.number_input('Hourly Rate', step=1)
         with col_monthly_rate:
             monthly_rate = st.number_input('Monthly Rate', step=1000)
 
