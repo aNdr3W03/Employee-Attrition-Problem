@@ -26,10 +26,16 @@ def model_predict(df):
 def main():
     st.title('Jaya Jaya Maju Employee Attrition Prediction')
 
-    age = st.number_input('Age', min_value=18, max_value=60)
-    gender = st.radio('Gender', options=['Male', 'Female'])
-    marital_status = st.selectbox('Marital Status',
-        ('Single', 'Married', 'Divorced'))
+    with st.container():
+        col_age, col_gender, col_marital = st.columns(3)
+        with col_age:
+            age = st.number_input('Age', min_value=18, max_value=60)
+        with col_gender:
+            gender = st.radio('Gender', options=['Male', 'Female'])
+        with col_marital:
+            marital_status = st.selectbox('Marital Status',
+                ('Single', 'Married', 'Divorced'))
+    
     education = st.selectbox('Education',
         ('Below College', 'College', 'Bachelor', 'Master', 'Doctor'))
     education_field = st.selectbox('Education Field',
