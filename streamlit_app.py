@@ -35,9 +35,6 @@ def main():
         with col_marital:
             marital_status = st.selectbox('Marital Status',
                 ('Single', 'Married', 'Divorced'))
-
-    st.text('')
-    st.text('')
     
     with st.container():
         col_education, col_edu_field = st.columns(2)
