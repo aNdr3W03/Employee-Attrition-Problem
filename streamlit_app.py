@@ -175,9 +175,9 @@ def main():
     @st.dialog('Prediction Result')
     def prediction(output):
         if output == 1:
-            st.subheader('Status Attrition: Yes' + output, divider='red')
+            st.subheader('Status Attrition: Yes', divider='red')
         else:
-            st.subheader('Status Attrition: No' + output, divider='green')
+            st.subheader('Status Attrition: No', divider='green')
     
     if st.button('✨ Predict'):
         data_input = data_preprocessing(df)
