@@ -36,6 +36,8 @@ def main():
             marital_status = st.selectbox('Marital Status',
                 ('Single', 'Married', 'Divorced'))
 
+    st.write()
+    
     with st.container():
         col_education, col_edu_field = st.columns(2)
         with col_education:
@@ -46,6 +48,8 @@ def main():
                 ('Human Resources', 'Life Sciences', 'Marketing', 'Medical',
                  'Technical Degree', 'Other'))
 
+    st.write()
+    
     with st.container():
         col_distance, col_business_travel = st.columns(2)
         with col_distance:
@@ -69,6 +73,8 @@ def main():
             job_level = st.selectbox('Job Level',
                 ('1', '2', '3', '4', '5'))
 
+    st.write()
+    
     with st.container():
         col_daily_rate, dol_hourly_rate, col_monthly_rate = st.columns(3)
         with col_daily_rate:
@@ -85,12 +91,16 @@ def main():
         with col_percent_salary_hike:
             percent_salary_hike = st.number_input('Percent Salary Hike (%)', step=1)
 
+    st.write()
+    
     with st.container():
         col_standard_hours, col_over_time = st.columns(2)
         with col_standard_hours:
             standard_hours = st.number_input('Standard Hours', value=80)
         with col_over_time:
             over_time = 'Yes' if st.checkbox('Over Time') else 'No'
+    
+    st.write()
     
     with st.container():
         col_job_sat, col_env_sat, col_rel_sat = st.columns(3)
@@ -116,6 +126,8 @@ def main():
             work_life_balance = st.select_slider('Work Life Balance',
                 options=['Low', 'Good', 'Excellent', 'Outstanding'])
 
+    st.write()
+    
     with st.container():
         col_stock_opt_lvl, col_num_companies_worked, col_training = st.columns(3)
         with col_stock_opt_lvl:
@@ -124,7 +136,7 @@ def main():
             num_companies_worked = st.number_input('Number of Companies Worked', step=1)
         with col_training:
             training_times_last_year = st.number_input('Training Times Last Year', step=1)
-
+    
     with st.container():
         col_tot_work_years, col_years_at_company, col_years_curr_role = st.columns(3)
         with col_tot_work_years:
