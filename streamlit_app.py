@@ -90,9 +90,6 @@ def main():
             monthly_income = st.number_input('Monthly Income', step=100)
         with col_percent_salary_hike:
             percent_salary_hike = st.number_input('Percent Salary Hike (%)', step=1)
-
-    st.text('')
-    st.text('')
     
     with st.container():
         col_standard_hours, col_over_time = st.columns(2)
