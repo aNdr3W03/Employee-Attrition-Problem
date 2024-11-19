@@ -186,12 +186,9 @@ def main():
         prediction(output)
 
     year_now = datetime.date.today().year
-    os.write(1, f"year_now {year_now}\n".encode())
     year = year_now if year_now == 2024 else '2024 - ' + str(year_now)
-    os.write(1, f"year {year}\n".encode())
     name = "[Andrew Benedictus Jamesie](http://linkedin.com/in/andrewbjamesie 'Andrew Benedictus Jamesie | LinkedIn')"
-    copyright = 'Copyright © 2024-' + str(year) + ' ' + name
-    os.write(1, f"copyright {copyright}\n".encode())
+    copyright = 'Copyright © ' + str(year) + ' ' + name
     st.caption(copyright)
 
 if __name__ == '__main__':
