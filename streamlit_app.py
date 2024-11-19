@@ -27,64 +27,119 @@ def main():
     st.title('Jaya Jaya Maju Employee Attrition Prediction')
 
     with st.container():
-        col_age, col_gender, col_marital = st.columns(3)
-        with col_age:
-            age = st.number_input('Age', min_value=18, max_value=60)
+        col_gender, col_age, col_marital = st.columns(3)
         with col_gender:
             gender = st.radio('Gender', options=['Male', 'Female'])
+        with col_age:
+            age = st.number_input('Age', min_value=18, max_value=60)
         with col_marital:
             marital_status = st.selectbox('Marital Status',
                 ('Single', 'Married', 'Divorced'))
+
+    with st.container():
+        col_education, col_edu_field = st.columns(2)
+        with col_education:
+            education = st.selectbox('Education',
+                ('Below College', 'College', 'Bachelor', 'Master', 'Doctor'))
+        with col_edu_field:
+            education_field = st.selectbox('Education Field',
+                ('Human Resources', 'Life Sciences', 'Marketing', 'Medical',
+                 'Technical Degree', 'Other'))
+
+    with st.container():
+        col_distance, col_business_travel = st.columns(2)
+        with col_distance:
+            distance_from_home = st.number_input('Distance From Home to Work (in Km)', step=1)
+        with col_business_travel:
+            business_travel = st.selectbox('Business Travel',
+                ('Non-Travel', 'Travel Rarely', 'Travel Frequently'))
+
+    with st.container():
+        col_dept, col_job_role, col_job_level = st.columns([2, 2, 1])
+        with col_dept:
+            department = st.selectbox('Department',
+                ('Human Resources', 'Research & Development', 'Sales'))
+        with col_job_role:
+            job_role = st.selectbox('JobRole',
+                ('Human Resources', 'Sales Executive', 'Sales Representative',
+                 'Healthcare Representative', 'Research Scientist',
+                 'Laboratory Technician', 'Manager', 'Manufacturing Director',
+                 'Research Director'))
+        with col_job_level:
+            job_level = st.selectbox('Job Level',
+                ('1', '2', '3', '4', '5'))
+
+    with st.container():
+        col_daily_rate, dol_hourly_rate, col_monthly_rate = st.columns(3)
+        with col_daily_rate:
+            daily_rate = st.number_input('Daily Rate', step=100)
+        with dol_hourly_rate:
+            hourly_rate = st.number_input('Hourly Rate', step=1)
+        with col_monthly_rate:
+            monthly_rate = st.number_input('Monthly Rate', step=1000)
+
+    with st.container():
+        col_monthly_income, col_percent_salary_hike = st.columns(2)
+        with col_monthly_income:
+            monthly_income = st.number_input('Monthly Income', step=100)
+        with col_percent_salary_hike:
+            percent_salary_hike = st.number_input('Percent Salary Hike (%)', step=1)
+
+    with st.container():
+        col_standard_hours, col_over_time = st.columns(2)
+        with col_standard_hours:
+            standard_hours = st.number_input('Standard Hours', value=80)
+        with col_over_time:
+            over_time = 'Yes' if st.checkbox('Over Time') else 'No'
     
-    education = st.selectbox('Education',
-        ('Below College', 'College', 'Bachelor', 'Master', 'Doctor'))
-    education_field = st.selectbox('Education Field',
-        ('Human Resources', 'Life Sciences', 'Marketing', 'Medical',
-         'Technical Degree', 'Other'))
+    with st.container():
+        col_job_sat, col_env_sat, col_rel_sat = st.columns(3)
+        with col_job_sat:
+            job_satisfaction = st.select_slider('Job Satisfaction',
+                options=['Low', 'Medium', 'High', 'Very High'])
+        with col_env_sat:
+            environment_satisfaction = st.select_slider('Environment Satisfaction',
+                options=['Low', 'Medium', 'High', 'Very High'])
+        with col_rel_sat:
+            relationship_satisfaction = st.select_slider('Relationship Satisfaction',
+                options=['Low', 'Medium', 'High', 'Very High'])
+    
+    with st.container():
+        col_job_inv, col_performance_rate, col_work_life_balance = st.columns(3)
+        with col_job_inv:
+            job_involvement = st.select_slider('Job Involvement',
+                options=['Low', 'Medium', 'High', 'Very High'])
+        with col_performance_rate:
+            performance_rating = st.select_slider('Performance Rating',
+                options=['Low', 'Good', 'Excellent', 'Outstanding'])
+        with col_work_life_balance:
+            work_life_balance = st.select_slider('Work Life Balance',
+                options=['Low', 'Good', 'Excellent', 'Outstanding'])
 
-    distance_from_home = st.number_input('Distance From Home (in Km)', step=1)
-    job_role = st.selectbox('JobRole',
-        ('Human Resources', 'Sales Executive', 'Sales Representative',
-         'Healthcare Representative', 'Research Scientist',
-         'Laboratory Technician', 'Manager', 'Manufacturing Director',
-         'Research Director'))
-    department = st.selectbox('Department',
-        ('Human Resources', 'Research & Development', 'Sales'))
-    job_level = st.selectbox('Job Level',
-        ('1', '2', '3', '4', '5'))
-    business_travel = st.selectbox('Business Travel',
-        ('Non-Travel', 'Travel Rarely', 'Travel Frequently'))
+    with st.container():
+        col_stock_opt_lvl, col_num_companies_worked, col_training = st.columns(3)
+        with col_stock_opt_lvl:
+            stock_option_level = st.selectbox('Stock Option Level', ('0', '1', '2', '3'))
+        with col_num_companies_worked:
+            num_companies_worked = st.number_input('Number of Companies Worked', step=1)
+        with col_training:
+            training_times_last_year = st.number_input('Training Times Last Year', step=1)
 
-    daily_rate = st.number_input('Daily Rate', step=100)
-    hourly_rate = st.number_input('Hourly Rate', step=1)
-    monthly_income = st.number_input('Monthly Income', step=100)
-    monthly_rate = st.number_input('Monthly Rate', step=1000)
-    percent_salary_hike = st.number_input('Percent Salary Hike (%)', step=1)
-
-    standard_hours = st.number_input('Standard Hours', value=80)
-    over_time = 'Yes' if st.checkbox('Over Time') else 'No'
-    job_satisfaction = st.select_slider('Job Satisfaction',
-        options=['Low', 'Medium', 'High', 'Very High'])
-    environment_satisfaction = st.select_slider('Environment Satisfaction',
-        options=['Low', 'Medium', 'High', 'Very High'])
-    relationship_satisfaction = st.select_slider('Relationship Satisfaction',
-        options=['Low', 'Medium', 'High', 'Very High'])
-    job_involvement = st.select_slider('Job Involvement',
-        options=['Low', 'Medium', 'High', 'Very High'])
-    performance_rating = st.select_slider('Performance Rating',
-        options=['Low', 'Good', 'Excellent', 'Outstanding'])
-    work_life_balance = st.select_slider('Work Life Balance',
-        options=['Low', 'Good', 'Excellent', 'Outstanding'])
-
-    stock_option_level = st.selectbox('Stock Option Level', ('0', '1', '2', '3'))
-    num_companies_worked = st.number_input('Number of Companies Worked', step=1)
-    training_times_last_year = st.number_input('Training Times Last Year', step=1)
-
-    total_working_years = st.number_input('TotalWorkingYears', step=1)
-    years_at_company = st.number_input('Years at Company', step=1)
-    years_in_current_role = st.number_input('Years in Current Role', step=1)
-    years_since_last_promotion = st.number_input('Years Since Last Promotion', step=1)
-    years_with_curr_manager = st.number_input('Years with Current Manager', step=1)
+    with st.container():
+        col_tot_work_years, col_years_at_company, col_years_curr_role = st.columns(3)
+        with col_tot_work_years:
+            total_working_years = st.number_input('TotalWorkingYears', step=1)
+        with col_years_at_company:
+            years_at_company = st.number_input('Years at Company', step=1)
+        with col_years_curr_role:
+            years_in_current_role = st.number_input('Years in Current Role', step=1)
+    
+    with st.container():
+        col_years_last_promotion, col_years_curr_manager = st.columns(2)
+        with col_years_last_promotion:
+            years_since_last_promotion = st.number_input('Years Since Last Promotion', step=1)
+        with col_years_curr_manager:
+            years_with_curr_manager = st.number_input('Years with Current Manager', step=1)
     
     data = [[age, business_travel, daily_rate, department, distance_from_home,
         education, education_field, environment_satisfaction, gender,
@@ -106,11 +161,6 @@ def main():
         'TotalWorkingYears', 'TrainingTimesLastYear', 'WorkLifeBalance',
         'YearsAtCompany', 'YearsInCurrentRole', 'YearsSinceLastPromotion',
         'YearsWithCurrManager'])
-    
-    pd.set_option('display.max_columns', None)
-    pd.set_option('display.max_rows', None)
-    pd.options.display.max_columns = None
-    pd.options.display.max_rows = None
 
     if st.button('✨ Predict'):
         with st.container():
