@@ -69,15 +69,18 @@ Pada dashboard ini, terdapat 3 kolom, kolom pertama menunjukkan analisis dari di
 > Dari **grafik work life balance**, pekerja yang memiliki attrition rate tertinggi datang dari pekerja dengan worklife balance paling rendah, yaitu sebesar 32.14% pekerja yang memiliki worklife balance rendah, yaitu 18 pekerja yang melakukan attrition, dan 38 pekerja yang tidak melakukannya. Sedangkan pekerja yang memiliki work life balance sangat tinggi justru menduduki di peringkat ke-2 dengan attrition rate tertinggi setelah work life balance rendah, yaitu sebesar 19.47% dengan 22 pekerja yang melakukan attrition dan 91 pekerja yang tidak.
 > Dari **grafik kepuasan kerja**, pekerja yang memiliki attrition rate tertinggi juga datang dari pekerja dengan tingkat kepuasan kerja yang rendah, yaitu sebesar 22.4% dengan 46 pekerja yang melakukan attrition dan 159 pekerja yang tidak melakukannya. Sedangkan pekerja dengan tingkat kepuasan kerja paling tinggi adalah pekerja dengan tingkat attrition paling rendah, yaitu 11.47%, sebesar 39 pekerja yang melakukan attrition dan 301 pekerja yang tidak.
 
+> [!NOTE]
+> Video singkat penjelasan business dashboard dan kesimpulannya dapat dilihat pada [link YouTube ini](https://youtu.be/KrT6mdZUXig 'Jaya Jaya Maju Business Dashboard').
+
 ## Conclusion
 
 Berikut adalah beberapa poin penting yang bisa ditarik menjadi kesimpulan:
--   **Demografi Karyawan**: Mayoritas pekerja adalah laki-laki (58.6%), dengan sebagian besar telah menikah (43.86%) dan berpendidikan sarjana (38.75%).
--   **Attrition Rate Berdasarkan Usia**: Pekerja dengan usia 19-30 tahun memiliki tingkat attrition tertinggi, dengan puncak pada usia 31 tahun. Pekerja usia 50-an cenderung lebih memilih untuk bertahan.
--   **Attrition Berdasarkan Peran**: Posisi sebagai Laboratory Technician menunjukkan tingkat attrition tertinggi, sementara Research Director memiliki attrition terendah.
--   **Keterlibatan Kerja**: Karyawan dengan tingkat keterlibatan rendah memiliki kecenderungan untuk melakukan attrition lebih tinggi.
--   **Work-Life Balance**: Karyawan dengan work-life balance rendah memiliki tingkat attrition tertinggi, diikuti oleh mereka dengan work-life balance sangat tinggi.
--   **Kepuasan Kerja**: Karyawan dengan tingkat kepuasan kerja rendah menunjukkan tingkat attrition tertinggi, sementara mereka dengan kepuasan kerja tinggi memiliki tingkat attrition terendah.
+- **Demografi Karyawan**: Mayoritas pekerja adalah laki-laki (58.6%), dengan sebagian besar telah menikah (43.86%) dan berpendidikan sarjana (38.75%).
+- **Attrition Rate Berdasarkan Usia**: Pekerja dengan usia 19-30 tahun memiliki tingkat attrition tertinggi, dengan puncak pada usia 31 tahun. Pekerja usia 50-an cenderung lebih memilih untuk bertahan.
+- **Attrition Berdasarkan Peran**: Posisi sebagai Laboratory Technician menunjukkan tingkat attrition tertinggi, sementara Research Director memiliki attrition terendah.
+- **Keterlibatan Kerja**: Karyawan dengan tingkat keterlibatan rendah memiliki kecenderungan untuk melakukan attrition lebih tinggi.
+- **Work-Life Balance**: Karyawan dengan work-life balance rendah memiliki tingkat attrition tertinggi, diikuti oleh mereka dengan work-life balance sangat tinggi.
+- **Kepuasan Kerja**: Karyawan dengan tingkat kepuasan kerja rendah menunjukkan tingkat attrition tertinggi, sementara mereka dengan kepuasan kerja tinggi memiliki tingkat attrition terendah.
 
 ### Recommended Action Items
 
