@@ -19,9 +19,7 @@ def data_preprocessing(data_input):
 
 def model_predict(df):
     model = joblib.load('model_gb.joblib')
-    pred = model.predict(df)
-
-    return 'Attrition: Yes' if pred == 1 else 'Attrition: No'
+    return model.predict(df)
 
 def main():
     st.title('Jaya Jaya Maju Employee Attrition Prediction')
@@ -176,7 +174,10 @@ def main():
 
     @st.dialog('Prediction Result')
     def prediction(output):
-        st.subheader('Status ' + output)
+        if output == 1:
+            st.subheader('Status Attrition: Yes' + output, divider='red')
+        else:
+            st.subheader('Status Attrition: No' + output, divider='green')
     
     if st.button('✨ Predict'):
         data_input = data_preprocessing(df)
