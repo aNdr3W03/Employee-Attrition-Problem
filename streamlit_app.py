@@ -3,6 +3,7 @@ import pandas as pd
 import streamlit as st
 import joblib
 from sklearn.preprocessing import LabelEncoder, MinMaxScaler
+import os
 
 def data_preprocessing(data_input):
     df = pd.read_csv('employee_data_cleaned.csv')
@@ -185,12 +186,12 @@ def main():
         prediction(output)
 
     year_now = datetime.date.today().year
-    print(f'year_now {year_now}')
+    os.write(1, f"year_now {year_now}\n".encode())
     year = year_now if year_now == 2024 else '2024 - ' + str(year_now)
-    print(f'year {year}')
+    os.write(1, f"year {year}\n".encode())
     name = "[Andrew Benedictus Jamesie](http://linkedin.com/in/andrewbjamesie 'Andrew Benedictus Jamesie | LinkedIn')"
     copyright = 'Copyright © 2024-' + str(year) + ' ' + name
-    print(f'copyright {copyright}')
+    os.write(1, f"copyright {copyright}\n".encode())
     st.caption(copyright)
 
 if __name__ == '__main__':
