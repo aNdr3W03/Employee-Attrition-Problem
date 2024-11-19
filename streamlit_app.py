@@ -36,7 +36,7 @@ def main():
             marital_status = st.selectbox('Marital Status',
                 ('Single', 'Married', 'Divorced'))
 
-    st.write()
+    st.text('')
     
     with st.container():
         col_education, col_edu_field = st.columns(2)
@@ -48,7 +48,7 @@ def main():
                 ('Human Resources', 'Life Sciences', 'Marketing', 'Medical',
                  'Technical Degree', 'Other'))
 
-    st.write()
+    st.text('')
     
     with st.container():
         col_distance, col_business_travel = st.columns(2)
@@ -73,7 +73,7 @@ def main():
             job_level = st.selectbox('Job Level',
                 ('1', '2', '3', '4', '5'))
 
-    st.write()
+    st.text('')
     
     with st.container():
         col_daily_rate, dol_hourly_rate, col_monthly_rate = st.columns(3)
@@ -91,7 +91,7 @@ def main():
         with col_percent_salary_hike:
             percent_salary_hike = st.number_input('Percent Salary Hike (%)', step=1)
 
-    st.write()
+    st.text('')
     
     with st.container():
         col_standard_hours, col_over_time = st.columns(2)
@@ -100,7 +100,7 @@ def main():
         with col_over_time:
             over_time = 'Yes' if st.checkbox('Over Time') else 'No'
     
-    st.write()
+    st.text('')
     
     with st.container():
         col_job_sat, col_env_sat, col_rel_sat = st.columns(3)
@@ -126,7 +126,7 @@ def main():
             work_life_balance = st.select_slider('Work Life Balance',
                 options=['Low', 'Good', 'Excellent', 'Outstanding'])
 
-    st.write()
+    st.text('')
     
     with st.container():
         col_stock_opt_lvl, col_num_companies_worked, col_training = st.columns(3)
