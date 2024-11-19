@@ -54,7 +54,7 @@ And to stop the streamlit application program by `ctrl + c`.
 
 [Jaya Jaya Maju Employees Dashboard](https://public.tableau.com/views/JayaJayaMajuEmployeesDashboard/Attrition 'Tableau Public- Jaya Jaya Maju Employees Dashboard'), didesain sefektif mungkin untuk memberikan insight kepada para manajer departemen HR terkait attrition rate yang cukup tinggi hingga lebih dari 10%. Dashboard ini juga didesain dengan visualisasi dan pemilihan warna yang inklusif bagi penderita color blind.
 
-![Jaya Jaya Maju Employees Dashboard](https://raw.githubusercontent.com/aNdr3W03/Employee-Attrition-Problem/refs/heads/main/Tableau%20Public%20Dashboard.png?token=GHSAT0AAAAAACYPPWW2HCEJ3WWBI5WICW6YZZ2UAOQ 'Jaya Jaya Maju Employees Dashboard')
+![Jaya Jaya Maju Employees Dashboard](https://github.com/user-attachments/assets/0b6e67e1-8f07-48fd-b024-a4eb207dee55 'Jaya Jaya Maju Employees Dashboard')
 
 Pada dashboard ini, terdapat 3 kolom, kolom pertama menunjukkan analisis dari distribusi jenis kelamin, status pernikahan, dan tingkat pendidikan yang telah ditempuh para pegawai. Pada kolom kedua menunjukkan grafik analisis attrition rate berdasarkan umur, peran pekerjaan dan keterlibatan pekerjaan. Sedangkan pada kolom ketiga terdapat jumlah attrition rate, rata-rata jumlah tahun berkerja setiap pegawai, rata-rata pendapatan pegawai, dan bubble chart jumlah attrition rate berdasarkan tingkat work life balance dan tingkat kepuasan kerja.
 
