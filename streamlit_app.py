@@ -174,12 +174,14 @@ def main():
         'YearsAtCompany', 'YearsInCurrentRole', 'YearsSinceLastPromotion',
         'YearsWithCurrManager'])
 
+    @st.dialog('Prediction Result')
+    def prediction(output):
+        st.subheader('Status ' + output)
+    
     if st.button('✨ Predict'):
-        with st.container():
-            data_input = data_preprocessing(df)
-            output = model_predict(data_input)
-
-            st.subheader('Status ' + output, divider='gray')
+        data_input = data_preprocessing(df)
+        output = model_predict(data_input)
+        prediction(output)
 
     year_now = datetime.date.today().year
     year = year_now if year_now == 2024 else '2024 - ' + str(year_now)
