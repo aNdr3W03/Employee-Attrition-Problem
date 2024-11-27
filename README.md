@@ -1,4 +1,4 @@
-# Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Human Resource
+# Menyelesaikan Permasalahan Perusahaan Human Resource
 
 ## Business Understanding
 
